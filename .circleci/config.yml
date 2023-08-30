@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  Anydesk RDP:
+  build: test
     machine:
       image: 'windows-server-2022-gui:current'
       resource_class: windows.large
