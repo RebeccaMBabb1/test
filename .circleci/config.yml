@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  Build:
+  build:
     machine:
       image: 'windows-server-2022-gui:current'
       resource_class: windows.medium
