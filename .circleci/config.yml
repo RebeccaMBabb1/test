@@ -4,7 +4,7 @@ jobs:
   build:
     machine:
       image: 'windows-server-2022-gui:current'
-      resource_class: windows.large
+      resource_class: windows.meduim
       shell: powershell.exe -ExecutionPolicy Bypass
     steps:
       - run: |
