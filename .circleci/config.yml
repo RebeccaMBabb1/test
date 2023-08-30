@@ -1,9 +1,9 @@
 version: 2.1
 jobs:
-  build:
+  Anydesk RDP:
     machine:
-      image: 'windows-server-2019-vs2019:2022.08.1'
-      resource_class: windows.medium
+      image: 'windows-server-2022-gui:current'
+      resource_class: windows.large
       shell: powershell.exe -ExecutionPolicy Bypass
     steps:
       - run: |
