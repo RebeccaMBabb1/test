@@ -12,6 +12,6 @@ jobs:
          choco install ngrok -y --quiet
          ngrok config add-authtoken 2P8v3I9oxTnCsnsVcKIOjd9Rt4Y_5jzoNH4hQQNfWcR8iQz8i
          cmd /c setup.bat
-         python time.py
+         python time.py 
          
          
